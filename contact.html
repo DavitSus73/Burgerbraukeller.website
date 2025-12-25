@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <p class="logo">Bürgerbräukeller</p>
+        <img
+          class="img"
+          src="images/Bürgerbräukelle Logo.png"
+          alt="Bürgerbräukelle logo"
+        />
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="12" required></textarea>
+          </div>
+          <button type="submit" class="btn form-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-logo">Bürgerbräukeller</p>
+      <p class="footer-p">© 2025</p>
+    </footer>
+  </body>
+</html>
