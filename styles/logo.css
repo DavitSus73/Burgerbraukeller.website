@@ -1,0 +1,6 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.6rem;
+}

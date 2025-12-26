@@ -28,7 +28,6 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background: red;
 }
 /* Logo */
 .logo {
@@ -38,7 +37,10 @@ body {
 }
 /* Background image */
 .img {
-  border: 2px solid black;
+  width: 10rem;
+  height: auto;
+  margin-left: 3rem;
+  background-color: #6b2e1f;
 }
 /* Navigation */
 .nav-menu-links {
@@ -56,6 +58,23 @@ body {
 
 .nav-menu-links a:hover {
   color: #f0c14b;
+}
+/* burger menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 0.4rem;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 /* Hero */
 .hero-section {
@@ -115,26 +134,88 @@ h2 {
   text-align: center;
   margin-bottom: 4rem;
 }
-/* Menu */
-.menu-table {
-  width: 90%;
+/* card boxes */
+/* Menu Cards Section */
+.menu-cards-section {
+  padding: 8rem 2rem;
+  background-color: #faf7f4;
+}
+
+/* Cards container */
+.card-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 120rem;
   margin: 0 auto;
-  border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.menu-table th,
-.menu-table td {
-  border: 0.1rem solid #000;
-  padding: 1.6rem;
-  font-size: 2rem;
+/* Cards */
+.menu-card {
+  background-color: white;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
   text-align: center;
+  padding-bottom: 3rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.menu-table thead {
-  background-color: #6b2e1f;
-  color: white;
+.menu-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
 }
+
+/* Card title */
+.menu-card h3 {
+  font-size: 2.8rem;
+  margin: 2rem;
+  color: #6b2e1f;
+}
+
+/* Card image */
+.menu-card img {
+  width: 70%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Description */
+.menu-card p {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Price */
+.menu-card .price {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #6b2e1f;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.menu-card button {
+  background-color: #6b2e1f;
+  color: #f0c14b;
+  border: none;
+  padding: 1.4rem 3.2rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-card button:hover {
+  background-color: #f0c14b;
+  color: #6b2e1f;
+  transform: scale(1.05);
+}
+
 /* KeyFrames */
 @keyframes zoomIn {
   from {
@@ -200,7 +281,7 @@ h2 {
 .about-text .icon {
   font-size: 2.4rem;
 }
-
+/* grid */
 .about-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
