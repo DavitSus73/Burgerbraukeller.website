@@ -1,8 +1,4 @@
-/* --- Desktop Base --- */
-/* აქ დევს შენი ჩვეულებრივი CSS */
 
-/* --------------------- */
-/* Tablet / iPad (max-width: 1024px) */
 @media (max-width: 1024px) {
   /* Header */
   .logo {
